@@ -65,10 +65,6 @@ lincs-state-space-navigator/
 │  └─ 03_EMT_to_MET_state_transition_full.ipynb
 ├─ src/
 │  ├─ __init__.py
-│  ├─ scoring.py           # state transition scoring functions
-│  ├─ sequential.py        # sequential and combination scoring
-│  ├─ plotting.py          # plotting utilities
-│  └─ utils.py             # helper functions
 └─ results/
    └─ EMT_MET_MCF7/
       └─ MCF7_EMT_to_Epithelial/
