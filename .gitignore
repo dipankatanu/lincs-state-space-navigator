@@ -1,0 +1,20 @@
+# --- DO NOT TRACK RAW LINCS FILES ---
+data/raw/
+data/raw/**
+
+# Large or sensitive
+*.gctx
+*.gct
+*.h5
+*.xlsx
+*.zip
+
+# Optional if your processed files are huge
+data/processed/*.csv
+data/processed/*.tsv
+
+# System / temp
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+*.pyc
