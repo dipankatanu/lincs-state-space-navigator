@@ -11,17 +11,19 @@ drive a disease state vector closer to a desired target state?
 
 The core idea is simple:
 
-\[
-\text{Score}(p) = \cos(D + p,\; T)
-\]
+Score(p) = cos( D + p_sig , T )
 
 Where:
 
 | Symbol | Meaning |
-|--------|---------|
-| D | disease state vector (for example EMT program) |
-| p | LINCS perturbation signature (Level 5 COMPZ consensus) |
-| T | target attractor vector (for example epithelial or MET state) |
+|--------|----------|
+| D | Disease state vector (for example EMT) |
+| p | A perturbation (drug or genetic perturbation) from the LINCS library |
+| p_sig | The perturbation signature vector for p (Level 5 COMPZ) |
+| T | Target attractor (for example MET or epithelial identity) |
+
+In words: each perturbation p is scored by measuring the cosine similarity between (D + p_sig) and the target state T.
+
 
 Positive scores indicate movement toward the target therapeutic state.  
 Negative scores indicate reinforcement of the disease state.
